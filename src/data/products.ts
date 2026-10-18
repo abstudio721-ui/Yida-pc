@@ -1,0 +1,302 @@
+import { Product } from '../types';
+
+export const initialProducts: Product[] = [
+  {
+    id: 'p1',
+    name: 'ASUS TUF Gaming F15 (2024)',
+    category: 'laptops',
+    brand: 'ASUS',
+    price: 89990,
+    originalPrice: 104990,
+    discount: '14% OFF',
+    badge: 'BEST SELLER',
+    inStock: true,
+    stockCount: 12,
+    specs: {
+      processor: 'Intel Core i7-13620H',
+      graphics: 'NVIDIA RTX 4060 8GB',
+      ram: '16GB DDR5',
+      storage: '512GB NVMe SSD',
+      display: '15.6" FHD 144Hz',
+      os: 'Windows 11 Home'
+    },
+    shortDescription: 'Intel Core i7 | RTX 4060 | 16GB DDR5',
+    description: 'The ASUS TUF Gaming F15 is a feature-packed gaming laptop built to serious gaming and multitasking standards. Armed with the 13th Gen Intel Core i7 processor and NVIDIA GeForce RTX 4060 GPU.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDmd_uEhfP1SFxIhoyLyFI1buXEuVWO4WOF7cn8ko5C_jim40qyQrskxewW9zem8X-hX9FLkDIPppCEla6QQGh0JDC3CkpRwsse36z4Lf3aFnhl-x9P0cYMpap2FydxxDNbx1Z__HxKf8xjf7APsXBHdfK8uOl1dIJJd4Ssu7jXYxChF16YJF8LS30Nwto8hjOkTKmchHHf-t9MHTagjFCUCHG-t3TeXwwq3wduzsp2HN78g65e-uU5',
+    thumbnails: [
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuCgyT0_ItyJR6Yu7U0XE50A_c5_g5GrsnxgHidKCY6kLss8kN6qcAo6-Ks_wpdbTn5JILb_ToFkzv-9cY9Ojwqea1sQtuX17mBMjkv2XiHD8I7qznsBVDjMqz5wmttfFz6ND0jX1Ugb1KrukcZ6xv05w-4y0Yn75y5huXPwXDTdpVpZWvibH4lJPFxDBnKtadc3axBtnRiafUv-1P7klLpgXVSeJLjdL0kRv_LZPNvFojFYmtppSFH4',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuDtlBjuEZ6K1swJLbeuuZSb5NmPvDCV2X6hNQ1MlK7m85nDxCoky0oGHOp7_4jDAnQAC8F5HsDK36K0nVLALcpmGvyBsgBve6da1MdNRqsPz1WFYS_UY4XsyqYVhp3jFkTU0gkZZYKL6R4vBQb33a3cFM2kgguEROAnq45FuCu-wLvNgOr7VtiH6h1Fsvl3qZ5TKCufS_HNAxUKYUBRIkmISiBQ69K3Bcg3OQH_mxii86EDcEzCb46y',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuD5UKrMji30cTwehnmapaigkVisWMw2QEo6qY22GI994gQeEmRg3kUDzgb2ZHojzLGgGTXcUwGKVML8HlPE3G6Q1xCAfQAlTjwdv6Wo6JmPVvqTQ0-hRmNXUTkDRaj6LVBAXkFn7amvQtqyO_V-5INX35ev0uiK_DoVTWR9kskBt2z2f9byP3g9SiGXz7TtgbYOr8uupYAg2vrJbkSppmCg38bpgrNkX0_ib-pbMVEEdiUht9epXrNW',
+      'https://lh3.googleusercontent.com/aida-public/AB6AXuBcMlQJaYZvVD8XOI9YUlCH5J3Zp-5Y7ZR0ql-31f_-1Q0CSxKeSPlUT5_7F4JhtI7shMakUCRSw_SLhr4rWILTrfKrhdFcnY5-RSc3MuVx9zuv55cMSeKvIY1g81myBQJEKNDjFqw01c1LH1l3fiICxm4DyzjbFPJ2TjCJtcfBlC57pZfru3oLQUB1JTMvGcz1qxL-8Tczqa0tkj5XUmYgiMw03Bi-NzkMuMPI3Q6_DPpBwfsBqi6o'
+    ],
+    rating: 4.8,
+    reviewsCount: 125
+  },
+  {
+    id: 'p2',
+    name: 'Apple MacBook Air M3',
+    category: 'laptops',
+    brand: 'Apple',
+    price: 104990,
+    badge: 'New',
+    inStock: true,
+    stockCount: 8,
+    specs: {
+      processor: 'Apple M3 chip',
+      ram: '8GB Unified RAM',
+      storage: '256GB SSD',
+      display: '13.6" Liquid Retina',
+      os: 'macOS'
+    },
+    shortDescription: '8GB | 256GB SSD | 13.6"',
+    description: 'Supercharged by the M3 chip, the MacBook Air is an ultraportable laptop that goes anywhere and handles work and play with ease.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBFOm4jPB7l5682JDRWnIfvGrQttK6hGHR1ar_CnxtC3AmFlcUjPnEens5kG-cpIj37LBNCzBVsMOkpPt1rLJrnJKWb_j7V5sTqN-SMgwWZ4jWHilyGaihL5JuqHdd5y6uHc3V6ZNheEdkAJ1-EsGf7ao2vawC2D187if_H9UYURNDXLhK5JCv7TNPXgGG-rEyjXaaHy6SaolosG2pvFd74_SZZjGXO4CtIJ8NddPl2PoU8hoNBBIUE',
+    thumbnails: [],
+    rating: 4.9,
+    reviewsCount: 84
+  },
+  {
+    id: 'p3',
+    name: 'ASUS Vivobook 15',
+    category: 'laptops',
+    brand: 'ASUS',
+    price: 54990,
+    originalPrice: 60990,
+    discount: '10% OFF',
+    inStock: true,
+    stockCount: 15,
+    specs: {
+      processor: 'Intel Core i5',
+      ram: '16GB RAM',
+      storage: '512GB SSD',
+      display: '15.6" FHD',
+      os: 'Windows 11 Home'
+    },
+    shortDescription: 'Intel i5 | 16GB | 512GB SSD',
+    description: 'Everyday productivity laptop with stunning visuals and powerful performance.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC-BXAqdYW5U8vqPeLBSsklWs3rnJ2a-zh0horK0bEaIl0JA3aAgg8N7-KWNGf8US3s1jC-IoN4La15RYA7fh4aIRhmf2T32qq-xIovJDLgiGt2_vzXT6utsSKe6Zkq2MdwWTyE-6ewUMSfxkwfA5y8hPP_Uch56qML4NCPYCflIDMGYqZgwbfpYRfaX9660vycPnQ8E4fUghBLvWBGFpOA8OYaJuhm_6a7eemW7JV2MAZXIuuYKp3C',
+    thumbnails: [],
+    rating: 4.7,
+    reviewsCount: 52
+  },
+  {
+    id: 'p4',
+    name: 'Lenovo IdeaPad Slim 5',
+    category: 'laptops',
+    brand: 'Lenovo',
+    price: 56990,
+    inStock: true,
+    stockCount: 10,
+    specs: {
+      processor: 'AMD Ryzen 5',
+      ram: '16GB RAM',
+      storage: '512GB SSD',
+      display: '14" FHD+ OLED'
+    },
+    shortDescription: 'Ryzen 5 | 16GB | 512GB SSD',
+    description: 'Sleek, lightweight metal chassis with stunning OLED display for professionals.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuADh3_eQVnLEfAd828iyYtechszLbRQfLMSzoZYodl8H7Vg9OZDPKvNsDWGFUFmecsC8-WyEsSw3OXstNuIXFR0Z0twXuAfk0U3PA4nh5yS_JR_ou2wxtUG9c78aNsjGjjKnT2hC5RHvYQGUW4C80UBvv1OtIs9MIx8C6KXU2WGQFzKpjADux5ljhQO1o_3ok4TVw2Fc7ULVD-Q8bBMuwK2fGFIDrG6-MX64rh_FMBJcHh7dGY7M_hu',
+    thumbnails: [],
+    rating: 4.6,
+    reviewsCount: 38
+  },
+  {
+    id: 'p5',
+    name: 'Custom Gaming PC (Apex)',
+    category: 'desktops',
+    brand: 'YIDA Custom',
+    price: 89990,
+    badge: 'BEST SELLER',
+    inStock: true,
+    stockCount: 6,
+    specs: {
+      processor: 'AMD Ryzen 7 7600X',
+      graphics: 'NVIDIA RTX 4060 8GB',
+      ram: '16GB RGB RAM',
+      storage: '1TB NVMe SSD'
+    },
+    shortDescription: 'Ryzen 7 | RTX 4060 | 16GB',
+    description: 'Ultimate custom-built gaming tower with tempered glass and RGB cooling.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAAduoOSiXEa017tlzDwsL3EQ2ZE5yRsrvsS9ycVePT0WUIe_Oy8QeEXOLoPfn4W2BjgdH2l1MCtJnpnfn-fR39u6S-lneof6IBQQZzfpUoSGsVqIo-7tsH6zNQPyitcTBdOk6UqbDnJ4CVpnzsebDrWA_E7-Dh6hb3i-_GFMIR1wruvsIlActbTIYsUNvOy3h8uzFnxEyNEDzViHZ7lrdlbmO2Yxpt8DRAlHYpqQzonbFQJnURnxXp',
+    thumbnails: [],
+    rating: 4.9,
+    reviewsCount: 67
+  },
+  {
+    id: 'p6',
+    name: 'LG UltraGear 27"',
+    category: 'monitors',
+    brand: 'LG',
+    price: 24990,
+    inStock: true,
+    stockCount: 14,
+    specs: {
+      display: '27" QHD (2560x1440)',
+      graphics: '165Hz | 1ms IPS'
+    },
+    shortDescription: 'QHD | 165Hz | 1ms',
+    description: 'High speed IPS gaming monitor with 1ms response time and HDR10 support.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDh-sXba2Chvmwk_JbmFoJ7KVxdCvJUcY1ve-Xi0GKC5p0mAFjZYwjnCBfCKGMe8yHKeAUCqVw_B1ojiDchb2H6r-JeA7nh21EwDEJZxhaIkCsLVsc0rrnyLi6NrUmNTyAmEfnkgMQFDnqVvAMw4W2-IyiaZBSkPuaQhpnAUs3CYsiNRxiG8w-UAVAGCegXc3Kbe0xnhlTbKfs83nziS1MsZfaqyLxRRdIURuZfgeKWPYfnSusZpR9D',
+    thumbnails: [],
+    rating: 4.8,
+    reviewsCount: 91
+  },
+  {
+    id: 'p7',
+    name: 'ASUS ROG Strix G16 Gaming Laptop',
+    category: 'laptops',
+    brand: 'ASUS',
+    price: 124999,
+    originalPrice: 152999,
+    discount: '18% OFF',
+    inStock: true,
+    stockCount: 5,
+    specs: {
+      processor: 'Intel Core i7-13650HX',
+      graphics: 'RTX 4060 8GB Graphics',
+      ram: '16GB DDR5',
+      storage: '512GB SSD'
+    },
+    shortDescription: 'Intel i7-13650HX | 16GB | RTX 4060',
+    description: 'ROG Strix G16 brings elite esports performance with Tri-Fan technology.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCUpW1twMEPSkLQdTvn_scObWVH6E72Ek3kl1NEcK61hzUFGTRUSSw2Kf0JpnBG8DlaR6V8KyXUQ_Ip5UioXIpI2soW6i-R1RnTqgtMxeiDHuV6IHqj4PMwOPN6LpnaPLYvBhWTHRBbvb1nZOx5GdC8ATfe3pjGr-4FjPoeV4Dny66W_m-PWk6ZsV9C66x5IlnJdzsNr6iztfQObD3LSWJF7L0wnHrkfDi6FxfVK4_C3h1_Tv5gzfFr',
+    thumbnails: [],
+    rating: 4.9,
+    reviewsCount: 110
+  },
+  {
+    id: 'p8',
+    name: 'Lenovo Legion Pro 5 AI Powered',
+    category: 'laptops',
+    brand: 'Lenovo',
+    price: 145500,
+    originalPrice: 175000,
+    discount: 'HOT DEAL',
+    inStock: true,
+    stockCount: 4,
+    specs: {
+      processor: 'AMD Ryzen 7 7745HX',
+      graphics: 'RTX 4070 8GB Graphics',
+      ram: '32GB DDR5',
+      storage: '1TB NVMe SSD'
+    },
+    shortDescription: 'Ryzen 7 | 32GB DDR5 | RTX 4070',
+    description: 'AI-tuned gaming laptop with Legion Coldfront cooling and high refresh display.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBvM8GR_EeYEMZ1EY75NmLxDLmawedWdFyFSCqBHdal7RJl0ILwpSTTxGtA9xRxVlKBCDWP9b-JrsJrL43qSufNzudXWu_S0vX2cx42Sv3xe1IFSmU1huWiED3QH8HFTfy_Ot23d69GMr557yWZJOC3ffDd11OHNZdUreO-lNC_l_kLt-SZ_fYWkvbjuk5KHkWGlSfXSUosKVQfuQAdGbh6hGJMEI3GzJTIHWva9C4C5g7G8z2yLjJe',
+    thumbnails: [],
+    rating: 4.9,
+    reviewsCount: 74
+  },
+  {
+    id: 'p9',
+    name: 'HP Victus 15 Gaming Laptop',
+    category: 'laptops',
+    brand: 'HP',
+    price: 62999,
+    originalPrice: 71999,
+    discount: '12% OFF',
+    inStock: true,
+    stockCount: 9,
+    specs: {
+      processor: 'Intel Core i5-12450H',
+      graphics: 'GTX 1650 4GB',
+      ram: '16GB RAM',
+      storage: '512GB SSD'
+    },
+    shortDescription: 'Intel i5 | 16GB | GTX 1650',
+    description: 'Reliable entry gaming laptop by HP with upgraded thermals and fast refresh rate.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBqn0Vg052zfRmjULj25ZC1YsmN8zFAnOW5kselq_qhBTxtzmuwFJMB0S-JDBzVzc22xej7B7y-jB8cgVnerOZhm4EPthFPfY-Zux7wKAgTIamdlFuen8v7t2Lqw-5WZ53stMj3wjtth_b5yLzooXlSEpj1PErQtPP2k8mkGrorKYk03YHI480iPYwcUPmtJ9DaHB98mLO5Fs0MtKfyAOIPVfyBvJNEYqld_akzYvsNoRbeCrRpdXfo',
+    thumbnails: [],
+    rating: 4.5,
+    reviewsCount: 45
+  },
+  {
+    id: 'p10',
+    name: 'MSI Katana 15 Gaming Laptop',
+    category: 'laptops',
+    brand: 'MSI',
+    price: 84999,
+    originalPrice: 104999,
+    discount: 'NEW MODEL',
+    inStock: true,
+    stockCount: 7,
+    specs: {
+      processor: 'Intel Core i7-12650H',
+      graphics: 'RTX 3050 6GB',
+      ram: '16GB DDR4',
+      storage: '1TB NVMe'
+    },
+    shortDescription: 'Intel i7 | 16GB | RTX 3050',
+    description: 'Sharpen your game with MSI Katana 15, featuring red backlit keyboard and robust build.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAeJTt3cIeWRkIk05SOa1QEtJE1VihQb5KOYIBmjjXDa86IlReipgt8mFS8XraJMJMEDmzqpTw7v615Hyhcj9_1wc3-PUX0GLVNzCAeJBjC1mAnJiW3Xn33KZwGoRIMEmIUlJmCR8vDhOwx_-KHgHfEBl5VgjVucA56j2xIvULE50DMdzNwFzYSQtma6KLRFCEdOIizSEfH7vkaOazZyDKsgRdPoo7xSItZF8PQt2eOPp1FbpkOcqSf',
+    thumbnails: [],
+    rating: 4.6,
+    reviewsCount: 62
+  },
+  {
+    id: 'p11',
+    name: 'Dell Inspiron 3520 Laptop',
+    category: 'laptops',
+    brand: 'Dell',
+    price: 54499,
+    originalPrice: 64500,
+    discount: '15% OFF',
+    inStock: true,
+    stockCount: 11,
+    specs: {
+      processor: 'Intel Core i5-1235U',
+      graphics: 'Intel Iris Xe',
+      ram: '16GB RAM',
+      storage: '512GB SSD'
+    },
+    shortDescription: 'Intel i5 | 16GB | 512GB SSD',
+    description: 'Everyday business and student laptop with 3-sided narrow borders and ComfortView.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBmlXhbE1hDqizhBvtxfS1aXVxjWhhDCz5e0KPKB6OEQCV92-K_TmziRwxnmLHn0x4fh6PCiahUdEROYIMoYntIA__G3_UqYsd-LaY4XxLBN8BS4nFYojOBVcd6iuoJPPvsLUtYZyoxQR5HKWCN8T4dLdCXa8ER7yaabtlf82eAatBfoydxuTHVOar8myMc4AcVBGxrf6jtJxw7gK8IxoKOTVJTCARLbsS-8qLSwMRATvX1Ou8uAxDU',
+    thumbnails: [],
+    rating: 4.5,
+    reviewsCount: 30
+  },
+  {
+    id: 'p12',
+    name: 'HP Pavilion Desktop Pro Tower',
+    category: 'desktops',
+    brand: 'HP',
+    price: 68499,
+    originalPrice: 79999,
+    discount: 'SPECIAL',
+    inStock: true,
+    stockCount: 5,
+    specs: {
+      processor: 'Intel Core i7-12700',
+      graphics: 'Intel UHD 770',
+      ram: '16GB RAM',
+      storage: '512GB SSD + 1TB HDD'
+    },
+    shortDescription: 'Intel i7 | 16GB | 512GB SSD + 1TB HDD',
+    description: 'Reliable desktop tower for professional multitasking and heavy office workloads.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBiWcaPwgYdQg65LZwDFgXZRDY23oEvCZ3sUw-_YD8GJFbqDdEGCPDTRaXAlMEL0-XJWgpt0vxO2FiCrUZHHIaxVDQQ5oecxTJj3iXIjAF-GOHlURBrvTg0U1l0uUrRdW7xXc-mx88vwXUZxPyCA-QUXnfMeg3UQwCFjvhEhMg9fAy_Q_V1Ti0_219c3sJda5y3JwvyI6sM4UzUbQii6GYHk8imjraDm9q5I1GwpZKhWfAxCMFRj9c9',
+    thumbnails: [],
+    rating: 4.7,
+    reviewsCount: 22
+  },
+  {
+    id: 'p13',
+    name: 'Logitech G304 LIGHTSPEED Mouse',
+    category: 'accessories',
+    brand: 'Logitech',
+    price: 2999,
+    originalPrice: 3995,
+    discount: '25% OFF',
+    inStock: true,
+    stockCount: 25,
+    specs: {
+      display: '12000 DPI | Wireless'
+    },
+    shortDescription: 'Wireless Gaming Mouse | 12000 DPI',
+    description: 'Next-gen LIGHTSPEED wireless gaming mouse for 1ms response time and incredible battery life.',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDr3mSOP9vCsl7JB4qIcG70Ycg_EmOq_8_gIN9T7Dq31QLzhcD8zC0OUy8nrlDIi0GBdbmy_vtxrAIvPbF2q-mvSnd7f8GxD9vMzQFn6Uq_18CITqNkowTng5OSQoPh8frs3yRTW2YIXICe1JtjZbTA9_sAK417Ii54jWWjf_FKH3Lq_61ZdocggHFH3_GQF-yon6fh-EPtK2ZIgsxpLYg-9nlLMg4r9EbACfIo-1laSLsl8LPYGXY5',
+    thumbnails: [],
+    rating: 4.9,
+    reviewsCount: 240
+  }
+];
